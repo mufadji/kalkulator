@@ -1,2 +1,2 @@
-# kalkulator
-hasil tugas kecil
+# hasil Tugas
+C++
