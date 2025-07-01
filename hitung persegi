@@ -1,0 +1,31 @@
+#include <iostream>
+using namespace std;
+
+int luasPersegi(int a){
+    return a*a;
+}
+int kelilingPersegi(int a){
+    return 4*a;
+}
+    
+    int main()
+        {
+        int sisi;char pilih;string kondisi="true";
+        while(kondisi=="true")
+        {
+            cout << "masukan sisi dari persegi =";
+            cin >> sisi;
+            
+            cout << "pilih a untuk luas atau b untuk keliling =";
+            cin >> pilih;
+            
+            if(pilih=='a'){
+                cout << "hasil keliling persegi dengn sisi 10 = " << kelilingPersegi(sisi) << endl;
+            }else{
+                cout << "hasil luas persegi panjang = " << luasPersegi(sisi) << endl;
+            }
+            cout << "apakah anda ingin perhitungan lain? (true/false)";
+            cin >> kondisi;
+        }
+    return 0;
+}
